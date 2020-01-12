@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send({
+      name : 'api',
+      version: '0.0.1'
+  });
 });
 
 module.exports = router;
